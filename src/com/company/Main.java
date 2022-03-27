@@ -52,7 +52,10 @@ public class Main {
         Arrays.sort (arr);
         for (int i = 0; i < arr.length - 1; i++) {
             if ((arr[i]) == arr[i + 1]) {
-                System.out.println("Внимание! Дубль в строке. Литера - " + arr [i + 1]);
+                System.out.println("Внимание! Дубль в строке "+ a +". Литера - " + arr [i + 1]+".");
+                break;
+            } else {
+                System.out.println("В строке "+a+ " дублей нет.");
                 break;
             }
         }
@@ -75,9 +78,9 @@ public class Main {
 
         printSeparator();
 
-        String s = "abcdcdefghijjkk";
+        String s = "aAbccddefgghiijjkk";
         checkDoubles(s);
-        String a = "Осваиваем методы";
+        String a = "123456";
         checkDoubles(a);
 
 
