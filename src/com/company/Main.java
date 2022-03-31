@@ -55,8 +55,10 @@ public class Main {
                 System.out.println("Внимание! Дубль в строке "+ a +". Литера - " + arr [i + 1]+".");
                 break;
             } else {
-                System.out.println("В строке "+a+ " дублей нет.");
-                break;
+                if(i == arr.length-2) {
+                    System.out.println("В строке "+a+ " дублей нет.");
+
+                }
             }
         }
     }
@@ -78,8 +80,9 @@ public class Main {
 
         printSeparator();
 
-        String s = "aAbccddefgghiijjkk";
+        String s = "abccddefgghiijjkk";
         checkDoubles(s);
+        printSeparator();
         String a = "123456";
         checkDoubles(a);
 
